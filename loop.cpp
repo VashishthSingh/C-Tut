@@ -12,7 +12,7 @@ int main(){
         }
         cout<<counter<<"\n";
     }
-               
+          
     int c1=1;
     while(c1<=10){ //condtion is checked during entry time
         if(c1==2){
