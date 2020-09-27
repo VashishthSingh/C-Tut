@@ -2,38 +2,42 @@
 #include<conio.h>
 using namespace std;
 // function return type, function name, arguments
-void acceptChar(float);
-void acceptFloat(double);
-void area(int,int);
+void area(int,int); 
 void area(int);
-void area(double);
+void setChar(int); 
+void setChar(double);
+void setFloat(double);
+void printChar(float);
+void printChar(double);
 
-void area(int l,int b){
-    cout<<"\nArea Of Rectangle = "<<l*b<<endl;
-}
-void area(int r){
-    cout<<"\nArea Of Circle = "<<3.14*r*r<<endl;
-}
-void area(double a){
-    cout<<"\nArea Od Square = "<<a*a<<endl;
-}
-void acceptChar(int ch){
-    cout<<ch;
-}
-void acceptChar(double d){
-    cout<<d;
-}
+void area(int l,int b){cout<<"\nArea Of Rectangle";}
+void area(int r){ cout<<"\nArea Of Circle";}
+
+void setChar(int ch){cout<<"\nSetting char --> int";}
+void setChar(double ch){cout<<"\nSetting char --> double";}
+
+void setFloat(double flag){cout<<"\nsetting flag --> double";}
+
+void printChar(float ch){cout<<"printing Char --> float";}
+void printChar(double ch){cout<<"printing Char --> double";}
+
 int main(){
     system("cls");
-    area(4,5);
+    area(4,5); 
     area(5);
-    area(4.4);
-    char x='A';
-    acceptChar(x);
+
+    char a='A'; 
+    setChar(a);
+
+    float flag=4.5f; 
+    setFloat(flag);
+
+    char b='B'; 
+    //printChar(b); // int, float, double
+
     getch();
     return(0);
 }
-
 /*
     How Compiler Resolves Function Overloading
     1. Exact Match
