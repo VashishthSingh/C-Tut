@@ -12,5 +12,6 @@ int main(){
     }
     cout<<setw(5)<<"Hello C++!\n";
     getch();
+	cout<<"Modified";
     return(0);
 }
